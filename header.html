@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyWebsite</title>
+        <link rel="stylesheet" href="header.css">
+        <style>
+            
+            .container {
+                border: 1px solid black;
+                padding: 3px;
+                display: flex;
+            }
+
+            .container > div {
+                display: flex;
+                padding: 4px 17px 3px 16px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: small;
+                color: black;
+                border: 1px solid;
+                background-color: transparent;
+            }
+
+            .logo {
+                padding: 2px 2px 2px 2px ;
+            }
+
+            .content {
+                flex-direction: row; 
+                display: flex;
+            }
+
+            .content > div {
+                display: block;
+                flex: 1; 
+                align-content: center; 
+                justify-content: center;
+            }
+
+            .form-section {
+                width: 100%;
+                margin-bottom: 140px;
+            }
+
+            .form-group {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            .form-group label {
+                width: 110px;
+                margin-right: 10px;
+            }
+
+            
+            .form-group input[type="text"],
+            .form-group input[type="date"],
+            .form-group textarea {
+                width: 581px;
+                flex: 1;
+                padding: 6px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .radio-group {
+                display: flex;
+                gap: 15px;
+            }
+
+            button {
+                width: 96%;
+                padding: 10px;
+                margin-top: 10px;
+            }
+
+            footer > p {
+                text-align: end;
+            }
+
+            .table_person {
+                border-collapse: collapse;
+                border: 1px solid black;
+            }
+            
+            table, th, td {
+                margin-top: -138px;
+                border: 1px solid #aaa;
+            }
+
+            th, td {
+                padding: 10px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #c1b4b4;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="container">
+            <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" 
+            class="logo" width="40" height="40">
+            <div class="home">Home</div>
+            <div class="myprofile">My Profile</div>
+            <div class="portofolio">Portofolio</div>
+            <div class="messageus">Message Us</div>
+        </nav>
+        
+        <header>
+            <h1>Form Belajar</h1>
+            <p>Ini adalah website latihan pertama</p>
+        </header>
+
+        <main class="content">
+            <div class="form-section">
+                <div class="form-group">
+                    <form action=""></form>
+                    <label for="name">Nama</label>
+                    <div class="titikdua">
+                        <label for=":">:</label>
+                    </div>
+                    <label><input type="text" placeholder="Nama"></label>
+                </div>
+                <div class="form-group">
+                    <label for="tanggallahir">Tanggal Lahir</label>
+                    <div class="titikdua">
+                        <label for=":">:</label>
+                    </div>
+                    <label><input type="date" placeholder="Tanggal Lahir"></label>
+                </div>
+                <div class="form-group">
+                    <label for="jeniskelamin">Jenis Kelamin</label>
+                    <div class="titikdua">
+                        <label for=":">:</label>
+                    </div>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender">Laki-laki</label>
+                        <label><input type="radio" name="gender">Perempuan</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <div class="titikdua">
+                        <label for=":">:</label>
+                    </div>
+                    <label><textarea name="pesan" placeholder="Pesan" rows="8"></textarea></label>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+
+            <div>
+                <table class="table_person">
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Pesan</th>
+                        <th>Profile</th>
+                        <th>Hapus</th>
+                    </tr>
+                    <tr>
+                        <td>Test1</td>
+                        <td>12 Januari 1996</td>
+                        <td>Laki-Laki</td>
+                        <td>Belajar Buat Website</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td>Gambar</td>
+                    </tr>
+                    <tr>
+                        <td>Test2</td>
+                        <td>12 Januari 1976</td>
+                        <td>Perempuan</td>
+                        <td>Belajar Website</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td>Gambar</td>
+                    </tr>
+                    <tr>
+                        <td>Test3</td>
+                        <td>12 Januari 1996</td>
+                        <td>Laki-Laki</td>
+                        <td>Belajar Buat Website</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td>Gambar</td>
+                    </tr>
+                    <tr>
+                        <td>Test4</td>
+                        <td>12 Januari 1996</td>
+                        <td>Laki-Laki</td>
+                        <td>Belajar Buat Website</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td>Gambar</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </main>
+<hr>
+        <footer>
+            <p>Created By Viest</p>
+        </footer>
+    </body>
+</html>
